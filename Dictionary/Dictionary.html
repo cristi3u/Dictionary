@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Dictionary.css">
+    <title>Dictionary!</title>
+  </head>
+  <body>
+    <div class="textCenter">
+    <h1>This is a dictionary!</h1>
+    <br>
+    <br>
+    <br>
+    <h6>Well, kind of a dictionary, you will add a number of words in you're dictionary, and after you finished, you can search them and see a result!</h6>
+    </div>
+    <div id="display" class="textCenter"><h3></h3></div>
+    <br>
+    <br>
+    <br>
+    <div class="textCenter">
+    <label for="add">Add you're words!</label>
+    <br>
+    <input type="text" id="addID">
+    <input id="addButtonID" type="submit" value="Add" onclick="return addWord();">
+    </div>
+    <br>
+    <div id="myList" class="textCenter"></div>
+    <br>
+    <br>
+    <div class="textCenter">
+    <label for="search">Search you're words!</label>
+    <br>
+    <input type="text" id="searchID">
+    <input id="SearchButtonID" type="submit" value="Search" onclick="return searchWord();">
+    </div>
+    <script src="./Dictionary.js"></script>
+  </body>
+</html>
